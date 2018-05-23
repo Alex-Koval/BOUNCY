@@ -1,0 +1,522 @@
+@import "font";
+@import "../fontawesome-free-5.0.11/web-fonts-with-css/css/fontawesome-all.min.css";
+
+$color_base: #ffffff;
+$color_other: #333;
+
+$bg-color-base: #ffffff;
+$bg-color-other: #f3f3f3;
+$bg-color-decoration: #19bd9a;
+
+$font_family_brand: 'big_johnregular';
+$font_family_main: 'Open Sans', "sans serif";
+$font_family_other: 'Source Sans Pro Light', "sans serif";
+
+
+@mixin max-screen($res)
+{
+  @media screen and (max-width: $res)
+  {
+    @content;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p, h1, h2, h3, h4 {
+  margin: 0;
+}
+
+//BEGIN HEADER
+header {
+  position: absolute;
+  z-index: 1;
+  left: 71px;
+  @include max-screen(768px) {
+    -webkit-box-shadow: none;
+    left: 0;
+  }
+  .navbar, .navbar-default {
+    -webkit-box-shadow: none;
+    margin-bottom: 0;
+    border: 0;
+    background: none;
+    .container {
+      .row {
+        .navbar-header {
+          .navbar-brand {
+            font-family: $font_family_brand;
+            font-size: 25px;
+            padding: 45px 15px 15px;
+            color: $color_base;
+            @include max-screen(768px) {
+              padding: 15px;
+            }
+            //&:after {
+            //  clear: both;
+            //}
+          }
+        }
+        .navbar-collapse {
+          .navbar-nav {
+            li {
+              a {
+                padding-top: 49px;
+                padding-bottom: 49px;
+                font-family: $font_family_main;
+                font-size: 16px;
+                color: $color_base;
+                border: 1px solid transparent;
+                @include max-screen(768px) {
+                  padding-top: 15px;
+                  padding-bottom: 15px;
+                  border: 0;
+                }
+                &:hover,
+                &:focus {
+                  border: 1px solid $color_base;
+                  border-radius: 25px;
+                  padding: 10px 20px;
+                  margin: 39px 5px;
+                  @include max-screen(768px) {
+                    padding: 15px;
+                    margin: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+section.slider {
+  position: relative;
+  z-index: 0;
+  background: url("../images/sea.png") no-repeat;
+  padding-top: 285px;
+  padding-bottom: 77px;
+  @include max-screen(768px) {
+    padding-top: 400px;
+    padding-bottom: 30px;
+  }
+  .container-fluid {
+    .row {
+      h1 {
+        font-family: $font_family_other;
+        font-size: 35px;
+        color: $color_base;
+        padding-bottom: 30px;
+      }
+      p {
+        font-family: $font_family_main;
+        font-size: 16px;
+        color: $color_base;
+        padding-bottom: 220px;
+        line-height: 28px;
+        @include max-screen(768px) {
+          padding-bottom: 30px;
+          line-height: 20px;
+        }
+      }
+      a.arrow {}
+    }
+  }
+}
+
+section.about_us {
+  background-color: $bg-color-base;
+  padding-top: 80px;
+  padding-bottom: 75px;
+  @include max-screen(768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .container {
+    .row {
+      .title {
+        h4 {
+          font-family: $font_family_other;
+          font-size: 16px;
+          padding-top: 35px;
+          @include max-screen(768px) {
+            padding-top: 0;
+          }
+        }
+        p {
+          font-family: $font_family_main;
+          padding-top: 50px;
+          padding-bottom: 35px;
+          line-height: 25px;
+          @include max-screen(768px) {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            line-height: 20px;
+          }
+        }
+        .btn {
+          font-family: $font_family_main;
+          font-size: 16px;
+          padding: 12px 30px;
+          border: 1px solid $color_other;
+          border-radius: 30px 30px;
+          color: $color_other;
+        }
+      }
+      .device {
+        @include max-screen(768px) {
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+section.about_us_details {
+  background-color: $bg-color-other;
+  padding-top: 80px;
+  padding-bottom: 104px;
+  @include max-screen(768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .container {
+    .row {
+      h4 {
+        font-family: $font_family_other;
+        font-size: 20px;
+      }
+      p.first {
+        font-family: $font_family_main;
+        line-height: 25px;
+        padding-top: 42px;
+        @include max-screen(768px) {
+          padding-top: 15px;
+          line-height: 20px;
+        }
+      }
+      .links {
+        padding-top: 64px;
+        @include max-screen(768px) {
+          padding-top: 20px;
+        }
+        .icons {
+          display: inline-block;
+          width: 53px;
+          height: 53px;
+          border-radius: 50%;
+          font-size: 30px;
+          padding-top: 7px;
+          background-color: #81868e;
+          color: $color_base;
+          margin-right: 27px;
+          &:nth-child(3) {
+            margin-right: 0;
+          }
+          &:hover {
+            background-color: $bg-color-decoration;
+          }
+        }
+      }
+      .ideas {
+        padding-top: 60px;
+        @include max-screen(768px) {
+          padding-top: 20px;
+        }
+        h4 {
+          font-family: $font_family_main;
+          font-size: 20px;
+        }
+        p {
+          font-family: $font_family_main;
+          font-size: 16px;
+          padding-top: 40px;
+          line-height: 28px;
+          @include max-screen(768px) {
+            padding-top: 15px;
+            line-height: 22px;
+          }
+          .word {
+            color: $bg-color-decoration;
+          }
+        }
+      }
+      p {
+        font-family: $font_family_main;
+        padding-top: 115px;
+        line-height: 25px;
+        @include max-screen(768px) {
+          padding-top: 15px;
+          line-height: 20px;
+        }
+        .word {
+          color: $bg-color-decoration;
+        }
+      }
+    }
+  }
+}
+
+aside.featured_work {
+  background-color: $bg-color-base;
+  padding-top: 80px;
+  padding-bottom: 65px;
+  @include max-screen(768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .container {
+    .row {
+      h4 {
+        font-family: $font_family_other;
+        font-size: 20px;
+      }
+      p {
+        font-family: $font_family_main;
+        line-height: 25px;
+        padding-top: 42px;
+        @include max-screen(768px) {
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+section.four{
+  .hov{
+    height: 319px;
+    position: relative;
+    padding: 0;
+    &:after{
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #000000;
+      color: #FFF;
+      text-align: center;
+      padding-top: 150px;
+      text-transform: uppercase;
+      font-family: $font_family_other;
+      font-size: 20px;
+      opacity: 0.8;
+    }
+    &:hover{
+      &:after{
+        display: none;
+      }
+    }
+  }
+  .first{
+    background-image: url("../images/img-1.png");
+    &:after{
+      content: "+";
+    }
+  }
+  .two{
+    background-image: url("../images/img-2.png");
+    &:after{
+      content: "VINTAGE";
+    }
+  }
+  .three{
+    background-image: url("../images/img-3.png");
+    &:after{
+      content: "Branding";
+    }
+  }
+}
+
+aside.five {
+  background-image: url("../images/green.png");
+  padding-top: 38px;
+  padding-bottom: 38px;
+  @include max-screen(768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .container {
+    .row {
+      p {
+        font-family: $font_family_main;
+        font-size: 20px;
+        color: $color_base;
+        padding-top: 10px;
+        @include max-screen(768px) {
+          padding-top: 0;
+        }
+      }
+      .btn {
+        font-family: $font_family_main;
+        font-size: 16px;
+        padding: 12px 24px;
+        margin-left: 30px;
+        border: 1px solid $color_base;
+        border-radius: 40px 40px;
+        color: $color_base;
+        @include max-screen(768px) {
+         margin: 20px 0 0 15px;
+        }
+      }
+    }
+  }
+}
+
+section.our_services {
+  background-color: $bg-color-base;
+  padding-top: 80px;
+  padding-bottom: 137px;
+  @include max-screen(768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .container {
+    .row {
+      h4 {
+        font-family: $font_family_other;
+        font-size: 20px;
+      }
+      p {
+        font-family: $font_family_main;
+        line-height: 25px;
+        padding-top: 42px;
+        padding-bottom: 80px;
+        @include max-screen(768px) {
+          padding-top: 15px;
+          padding-bottom: 20px;
+        }
+      }
+      .touch {
+        padding-left: 100px;
+        padding-right: 20px;
+        @include max-screen(768px) {
+          padding-left: 20px;
+          padding-bottom: 20px;
+        }
+        .icons {
+          display: inline-block;
+          width: 53px;
+          height: 53px;
+          border-radius: 50%;
+          font-size: 30px;
+          padding-top: 6px;
+          background-color: #81868e;
+          color: $color_base;
+          margin-bottom: 17px;
+          &:nth-child(4) {
+            margin-bottom: 0;
+          }
+          &:hover {
+            background-color: $bg-color-decoration;
+          }
+          @include max-screen(768px) {
+            margin-left: 10px;
+            &:nth-child(1) {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+      .description {
+        h4 {
+          font-family: $font_family_main;
+          font-size: 20px;
+        }
+        p.graphic {
+          font-family: $font_family_main;
+          font-size: 16px;
+          line-height: 25px;
+          padding-top: 40px;
+          padding-bottom: 0;
+          @include max-screen(768px) {
+            padding-top: 15px;
+          }
+        }
+        .word {
+          color: $bg-color-decoration;
+        }
+        p.design {
+          font-family: $font_family_main;
+          line-height: 23px;
+          padding-top: 45px;
+          padding-bottom: 0;
+          @include max-screen(768px) {
+            padding-top: 20px;
+          }
+        }
+        .word {
+          color: $bg-color-decoration;
+        }
+      }
+      .bar {
+        padding-top: 50px;
+        @include max-screen(768px) {
+          padding-top: 20px;
+        }
+        img {
+          width: 80%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+section.director {
+  background-image: url("../images/men.png");
+  padding-bottom: 70px;
+  @include max-screen(768px) {
+    padding-bottom: 30px;
+  }
+  .men {
+    h4 {
+      font-family: $font_family_other;
+      font-size: 20px;
+      padding-top: 80px;
+      color: $color_base;
+      letter-spacing: 7px;
+      @include max-screen(768px) {
+        padding-top: 30px;
+      }
+    }
+    p {
+      font-family: $font_family_main;
+      font-size: 16px;
+      line-height: 28px;
+      padding-top: 60px;
+      color: $color_base;
+      @include max-screen(768px) {
+        padding-top: 20px;
+      }
+    }
+    address {
+      padding-top: 34px;
+      margin-bottom: 0;
+      color: $color_base;
+      @include max-screen(768px) {
+        padding-top: 20px;
+      }
+      .word {
+        color: $bg-color-decoration;
+      }
+    }
+  }
+  .device {
+    margin-top: -38px;
+    @include max-screen(768px) {
+      padding-top: 30px;
+      margin-top: 0;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

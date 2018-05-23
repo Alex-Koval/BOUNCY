@@ -1,0 +1,400 @@
+@charset "UTF-8";
+@import url(../fontawesome-free-5.0.11/web-fonts-with-css/css/fontawesome-all.min.css);
+@font-face {
+  font-family: 'big_johnregular';
+  src: url("../fonts/bigjohn/╨│egular/big-john-webfont.woff2") format("woff2"), url("../fonts/bigjohn/╨│egular/big-john-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Open Sans';
+  src: local("Open Sans"), local("OpenSans"), url("../fonts/opensans/regular/opensans.woff2") format("woff2"), url("../fonts/opensans/regular/opensans.woff") format("woff"), url("../fonts/opensans/regular/opensans.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local("Source Sans Pro Light"), local("SourceSansPro-Light"), url("../fonts/sourcesanspro/sourcesansprolight/sourcesansprolight.woff2") format("woff2"), url("../fonts/sourcesanspro/sourcesansprolight/sourcesansprolight.woff") format("woff"), url("../fonts/sourcesanspro/sourcesansprolight/sourcesansprolight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+* {
+  margin: 0;
+  padding: 0; }
+
+p, h1, h2, h3, h4 {
+  margin: 0; }
+
+header {
+  position: absolute;
+  z-index: 1;
+  left: 71px; }
+  @media screen and (max-width: 768px) {
+    header {
+      -webkit-box-shadow: none;
+      left: 0; } }
+  header .navbar, header .navbar-default {
+    -webkit-box-shadow: none;
+    margin-bottom: 0;
+    border: 0;
+    background: none; }
+    header .navbar .container .row .navbar-header .navbar-brand, header .navbar-default .container .row .navbar-header .navbar-brand {
+      font-family: "big_johnregular";
+      font-size: 25px;
+      padding: 45px 15px 15px;
+      color: #ffffff; }
+      @media screen and (max-width: 768px) {
+        header .navbar .container .row .navbar-header .navbar-brand, header .navbar-default .container .row .navbar-header .navbar-brand {
+          padding: 15px; } }
+    header .navbar .container .row .navbar-collapse .navbar-nav li a, header .navbar-default .container .row .navbar-collapse .navbar-nav li a {
+      padding-top: 49px;
+      padding-bottom: 49px;
+      font-family: "Open Sans", "sans serif";
+      font-size: 16px;
+      color: #ffffff;
+      border: 1px solid transparent; }
+      @media screen and (max-width: 768px) {
+        header .navbar .container .row .navbar-collapse .navbar-nav li a, header .navbar-default .container .row .navbar-collapse .navbar-nav li a {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          border: 0; } }
+      header .navbar .container .row .navbar-collapse .navbar-nav li a:hover, header .navbar .container .row .navbar-collapse .navbar-nav li a:focus, header .navbar-default .container .row .navbar-collapse .navbar-nav li a:hover, header .navbar-default .container .row .navbar-collapse .navbar-nav li a:focus {
+        border: 1px solid #ffffff;
+        border-radius: 25px;
+        padding: 10px 20px;
+        margin: 39px 5px; }
+        @media screen and (max-width: 768px) {
+          header .navbar .container .row .navbar-collapse .navbar-nav li a:hover, header .navbar .container .row .navbar-collapse .navbar-nav li a:focus, header .navbar-default .container .row .navbar-collapse .navbar-nav li a:hover, header .navbar-default .container .row .navbar-collapse .navbar-nav li a:focus {
+            padding: 15px;
+            margin: 0; } }
+
+section.slider {
+  position: relative;
+  z-index: 0;
+  background: url("../images/sea.png") no-repeat;
+  padding-top: 285px;
+  padding-bottom: 77px; }
+  @media screen and (max-width: 768px) {
+    section.slider {
+      padding-top: 400px;
+      padding-bottom: 30px; } }
+  section.slider .container-fluid .row h1 {
+    font-family: "Source Sans Pro Light", "sans serif";
+    font-size: 35px;
+    color: #ffffff;
+    padding-bottom: 30px; }
+  section.slider .container-fluid .row p {
+    font-family: "Open Sans", "sans serif";
+    font-size: 16px;
+    color: #ffffff;
+    padding-bottom: 220px;
+    line-height: 28px; }
+    @media screen and (max-width: 768px) {
+      section.slider .container-fluid .row p {
+        padding-bottom: 30px;
+        line-height: 20px; } }
+
+section.about_us {
+  background-color: #ffffff;
+  padding-top: 80px;
+  padding-bottom: 75px; }
+  @media screen and (max-width: 768px) {
+    section.about_us {
+      padding-top: 30px;
+      padding-bottom: 30px; } }
+  section.about_us .container .row .title h4 {
+    font-family: "Source Sans Pro Light", "sans serif";
+    font-size: 16px;
+    padding-top: 35px; }
+    @media screen and (max-width: 768px) {
+      section.about_us .container .row .title h4 {
+        padding-top: 0; } }
+  section.about_us .container .row .title p {
+    font-family: "Open Sans", "sans serif";
+    padding-top: 50px;
+    padding-bottom: 35px;
+    line-height: 25px; }
+    @media screen and (max-width: 768px) {
+      section.about_us .container .row .title p {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        line-height: 20px; } }
+  section.about_us .container .row .title .btn {
+    font-family: "Open Sans", "sans serif";
+    font-size: 16px;
+    padding: 12px 30px;
+    border: 1px solid #333;
+    border-radius: 30px 30px;
+    color: #333; }
+  @media screen and (max-width: 768px) {
+    section.about_us .container .row .device {
+      padding-top: 20px; } }
+
+section.about_us_details {
+  background-color: #f3f3f3;
+  padding-top: 80px;
+  padding-bottom: 104px; }
+  @media screen and (max-width: 768px) {
+    section.about_us_details {
+      padding-top: 30px;
+      padding-bottom: 30px; } }
+  section.about_us_details .container .row h4 {
+    font-family: "Source Sans Pro Light", "sans serif";
+    font-size: 20px; }
+  section.about_us_details .container .row p.first {
+    font-family: "Open Sans", "sans serif";
+    line-height: 25px;
+    padding-top: 42px; }
+    @media screen and (max-width: 768px) {
+      section.about_us_details .container .row p.first {
+        padding-top: 15px;
+        line-height: 20px; } }
+  section.about_us_details .container .row .links {
+    padding-top: 64px; }
+    @media screen and (max-width: 768px) {
+      section.about_us_details .container .row .links {
+        padding-top: 20px; } }
+    section.about_us_details .container .row .links .icons {
+      display: inline-block;
+      width: 53px;
+      height: 53px;
+      border-radius: 50%;
+      font-size: 30px;
+      padding-top: 7px;
+      background-color: #81868e;
+      color: #ffffff;
+      margin-right: 27px; }
+      section.about_us_details .container .row .links .icons:nth-child(3) {
+        margin-right: 0; }
+      section.about_us_details .container .row .links .icons:hover {
+        background-color: #19bd9a; }
+  section.about_us_details .container .row .ideas {
+    padding-top: 60px; }
+    @media screen and (max-width: 768px) {
+      section.about_us_details .container .row .ideas {
+        padding-top: 20px; } }
+    section.about_us_details .container .row .ideas h4 {
+      font-family: "Open Sans", "sans serif";
+      font-size: 20px; }
+    section.about_us_details .container .row .ideas p {
+      font-family: "Open Sans", "sans serif";
+      font-size: 16px;
+      padding-top: 40px;
+      line-height: 28px; }
+      @media screen and (max-width: 768px) {
+        section.about_us_details .container .row .ideas p {
+          padding-top: 15px;
+          line-height: 22px; } }
+      section.about_us_details .container .row .ideas p .word {
+        color: #19bd9a; }
+  section.about_us_details .container .row p {
+    font-family: "Open Sans", "sans serif";
+    padding-top: 115px;
+    line-height: 25px; }
+    @media screen and (max-width: 768px) {
+      section.about_us_details .container .row p {
+        padding-top: 15px;
+        line-height: 20px; } }
+    section.about_us_details .container .row p .word {
+      color: #19bd9a; }
+
+aside.featured_work {
+  background-color: #ffffff;
+  padding-top: 80px;
+  padding-bottom: 65px; }
+  @media screen and (max-width: 768px) {
+    aside.featured_work {
+      padding-top: 30px;
+      padding-bottom: 30px; } }
+  aside.featured_work .container .row h4 {
+    font-family: "Source Sans Pro Light", "sans serif";
+    font-size: 20px; }
+  aside.featured_work .container .row p {
+    font-family: "Open Sans", "sans serif";
+    line-height: 25px;
+    padding-top: 42px; }
+    @media screen and (max-width: 768px) {
+      aside.featured_work .container .row p {
+        padding-top: 20px; } }
+
+section.four .hov {
+  height: 319px;
+  position: relative;
+  padding: 0; }
+  section.four .hov:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    color: #FFF;
+    text-align: center;
+    padding-top: 150px;
+    text-transform: uppercase;
+    font-family: "Source Sans Pro Light", "sans serif";
+    font-size: 20px;
+    opacity: 0.8; }
+  section.four .hov:hover:after {
+    display: none; }
+section.four .first {
+  background-image: url("../images/img-1.png"); }
+  section.four .first:after {
+    content: "+"; }
+section.four .two {
+  background-image: url("../images/img-2.png"); }
+  section.four .two:after {
+    content: "VINTAGE"; }
+section.four .three {
+  background-image: url("../images/img-3.png"); }
+  section.four .three:after {
+    content: "Branding"; }
+
+aside.five {
+  background-image: url("../images/green.png");
+  padding-top: 38px;
+  padding-bottom: 38px; }
+  @media screen and (max-width: 768px) {
+    aside.five {
+      padding-top: 30px;
+      padding-bottom: 30px; } }
+  aside.five .container .row p {
+    font-family: "Open Sans", "sans serif";
+    font-size: 20px;
+    color: #ffffff;
+    padding-top: 10px; }
+    @media screen and (max-width: 768px) {
+      aside.five .container .row p {
+        padding-top: 0; } }
+  aside.five .container .row .btn {
+    font-family: "Open Sans", "sans serif";
+    font-size: 16px;
+    padding: 12px 24px;
+    margin-left: 30px;
+    border: 1px solid #ffffff;
+    border-radius: 40px 40px;
+    color: #ffffff; }
+    @media screen and (max-width: 768px) {
+      aside.five .container .row .btn {
+        margin: 20px 0 0 15px; } }
+
+section.our_services {
+  background-color: #ffffff;
+  padding-top: 80px;
+  padding-bottom: 137px; }
+  @media screen and (max-width: 768px) {
+    section.our_services {
+      padding-top: 30px;
+      padding-bottom: 30px; } }
+  section.our_services .container .row h4 {
+    font-family: "Source Sans Pro Light", "sans serif";
+    font-size: 20px; }
+  section.our_services .container .row p {
+    font-family: "Open Sans", "sans serif";
+    line-height: 25px;
+    padding-top: 42px;
+    padding-bottom: 80px; }
+    @media screen and (max-width: 768px) {
+      section.our_services .container .row p {
+        padding-top: 15px;
+        padding-bottom: 20px; } }
+  section.our_services .container .row .touch {
+    padding-left: 100px;
+    padding-right: 20px; }
+    @media screen and (max-width: 768px) {
+      section.our_services .container .row .touch {
+        padding-left: 20px;
+        padding-bottom: 20px; } }
+    section.our_services .container .row .touch .icons {
+      display: inline-block;
+      width: 53px;
+      height: 53px;
+      border-radius: 50%;
+      font-size: 30px;
+      padding-top: 6px;
+      background-color: #81868e;
+      color: #ffffff;
+      margin-bottom: 17px; }
+      section.our_services .container .row .touch .icons:nth-child(4) {
+        margin-bottom: 0; }
+      section.our_services .container .row .touch .icons:hover {
+        background-color: #19bd9a; }
+      @media screen and (max-width: 768px) {
+        section.our_services .container .row .touch .icons {
+          margin-left: 10px; }
+          section.our_services .container .row .touch .icons:nth-child(1) {
+            margin-left: 0; } }
+  section.our_services .container .row .description h4 {
+    font-family: "Open Sans", "sans serif";
+    font-size: 20px; }
+  section.our_services .container .row .description p.graphic {
+    font-family: "Open Sans", "sans serif";
+    font-size: 16px;
+    line-height: 25px;
+    padding-top: 40px;
+    padding-bottom: 0; }
+    @media screen and (max-width: 768px) {
+      section.our_services .container .row .description p.graphic {
+        padding-top: 15px; } }
+  section.our_services .container .row .description .word {
+    color: #19bd9a; }
+  section.our_services .container .row .description p.design {
+    font-family: "Open Sans", "sans serif";
+    line-height: 23px;
+    padding-top: 45px;
+    padding-bottom: 0; }
+    @media screen and (max-width: 768px) {
+      section.our_services .container .row .description p.design {
+        padding-top: 20px; } }
+  section.our_services .container .row .description .word {
+    color: #19bd9a; }
+  section.our_services .container .row .bar {
+    padding-top: 50px; }
+    @media screen and (max-width: 768px) {
+      section.our_services .container .row .bar {
+        padding-top: 20px; } }
+    section.our_services .container .row .bar img {
+      width: 80%;
+      height: auto; }
+
+section.director {
+  background-image: url("../images/men.png");
+  padding-bottom: 70px; }
+  @media screen and (max-width: 768px) {
+    section.director {
+      padding-bottom: 30px; } }
+  section.director .men h4 {
+    font-family: "Source Sans Pro Light", "sans serif";
+    font-size: 20px;
+    padding-top: 80px;
+    color: #ffffff;
+    letter-spacing: 7px; }
+    @media screen and (max-width: 768px) {
+      section.director .men h4 {
+        padding-top: 30px; } }
+  section.director .men p {
+    font-family: "Open Sans", "sans serif";
+    font-size: 16px;
+    line-height: 28px;
+    padding-top: 60px;
+    color: #ffffff; }
+    @media screen and (max-width: 768px) {
+      section.director .men p {
+        padding-top: 20px; } }
+  section.director .men address {
+    padding-top: 34px;
+    margin-bottom: 0;
+    color: #ffffff; }
+    @media screen and (max-width: 768px) {
+      section.director .men address {
+        padding-top: 20px; } }
+    section.director .men address .word {
+      color: #19bd9a; }
+  section.director .device {
+    margin-top: -38px; }
+    @media screen and (max-width: 768px) {
+      section.director .device {
+        padding-top: 30px;
+        margin-top: 0; } }
+    section.director .device img {
+      width: 100%;
+      height: auto; }
+
+/*# sourceMappingURL=style.css.map */
